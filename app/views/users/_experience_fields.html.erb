@@ -1,0 +1,55 @@
+<div class="nested-fields">
+  <div class="field">
+    <%= f.label :ziptwo, 'Cep' %>
+    <%= f.text_field :ziptwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :citytwo, 'Cidade' %>
+    <%= f.text_field :citytwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :statetwo, 'Estado' %>
+    <%= f.text_field :statetwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :boroughtwo, 'Bairro' %>
+    <%= f.text_field :boroughtwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :streetwo, 'Rua' %>
+    <%= f.text_field :streetwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :numbertwo, 'Numero' %>
+    <%= f.text_field :numbertwo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :comptwo, 'Complemento' %>
+    <%= f.text_field :comptwo %>
+  </div>
+
+  <div class="field">
+    <h4>Tipo de Estabelecimento:</h4>
+    <%= label_tag 'tipo_comercial', 'Comercial' %>
+    <%= check_box_tag 'user[tipo][]', 'Comercial', checked('Comercial'), id: 'tipo_comercial' %>
+
+    <%= label_tag 'tipo_residencial', 'Residencial' %>
+    <%= check_box_tag 'user[tipo][]', 'Residencial', checked('Residencial'), id: 'tipo_residencial' %>
+
+    <%= label_tag 'tipo_rural', 'Rural' %>
+    <%= check_box_tag 'user[tipo][]', 'Rural', checked('Rural'), id: 'tipo_rural' %>
+
+    <%= label_tag 'tipo_casa', 'Casa de Praia' %>
+    <%= check_box_tag 'user[tipo][]', 'Casa de Praia', checked('Casa de Praia'), id: 'tipo_casa' %>
+  </div>
+
+  <%= link_to_remove_association 'Remover Endereço', f %>
+
+  <br><br><br>
+</div>
