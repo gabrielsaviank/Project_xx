@@ -53,5 +53,5 @@ gem "cocoon"
 gem 'jquery'
 gem 'jquery-rails', '~> 4.3.3'
 gem 'devise'
-
+gem 'bootstrap', '~> 4.0.0.alpha6'
 
