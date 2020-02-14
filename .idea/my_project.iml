@@ -33,7 +33,9 @@
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.7.4, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.0.0.alpha6, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bulma (v0.1.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocoon (v1.2.14, RVM: ruby-2.4.0 [global]) [gem]" level="application" />

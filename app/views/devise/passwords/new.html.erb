@@ -1,16 +1,31 @@
-<h2>Esqueceu sua senha?</h2>
-
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<body>
+<div class="navi">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h3 class="my-0 mr-md-auto font-weight-high">X-Solar Tech Clientes</h3>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a style="padding-right: 20px" <%=link_to "Home", wilkommen_path, method: :get, class: "btn btn-outline-primary"  %></a>
+      <a style="padding-right: 20px"><%= link_to "Log in", new_session_path(resource_name), class: "btn btn-outline-primary" %></a>
+      <a style="padding-right: 20px"><%= link_to "Registrar", new_admin_registration_path, :method => "get", class: "btn btn-outline-primary" %></a>
+    </nav>
   </div>
+</div><br>
 
-  <div class="actions">
-    <%= f.submit "Enviar instruções de senha" %>
-  </div>
-<% end %>
+<div class="card">
+  <h2 style="font-size: xx-large">Esqueceu sua Senha ?</h2><br><br><br><br>
 
-<%= render "devise/shared/links" %>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :size=> '60', class: 'form-control' %>
+    </div><br><br><br><br>
+
+    <div class="form-group">
+      <%= f.submit "Enviar instruções de senha", class: 'btn btn-lg btn-outline-primary' %>
+    </div>
+  <% end %>
+</div>
+</body>
+
+

@@ -1,13 +1,22 @@
-<p id="notice"><%= notice %></p>
+<body>
+<div class="navi">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h3 class="my-0 mr-md-auto font-weight-high">X-Solar Tech Clientes</h3>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a style="padding-right: 20px" <%=link_to "Home", wilkommen_path, method: :get, class: "btn btn-outline-primary"  %></a>
+      <a style="padding-right: 20px"><%=link_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-outline-primary"%></a>
+    </nav>
+  </div>
+</div><br>
 
-<h1>X-Solar Tech</h1>
+<div class="card2">
+  <h2 style="font-size: xx-large">Clientes</h2><br>
 
-<div class="field">
-  <%=link_to "Logout", destroy_admin_session_path, method: :delete %>
-</div>
+  <p><%= link_to 'Novo Cliente', new_user_path, class: "btn btn-outline-primary" %></p><br>
 
-<table>
-  <thead>
+
+  <table>
+    <thead>
     <tr>
       <th>Nome</th>
       <th>Cpf</th>
@@ -16,16 +25,11 @@
       <th>Cep</th>
       <th>Cidade</th>
       <th>Estado</th>
-      <th>Bairro</th>
-      <th>Rua</th>
-      <th>Número</th>
-      <th>Complemento</th>
-      <th>Tipo</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @users.each do |user| %>
       <tr>
         <td><%= user.name %></td>
@@ -35,19 +39,13 @@
         <td><%= user.zip %></td>
         <td><%= user.city %></td>
         <td><%= user.state %></td>
-        <td><%= user.borough %></td>
-        <td><%= user.street %></td>
-        <td><%= user.number %></td>
-        <td><%= user.comp %></td>
-        <td><%= user.tipo %></td>
-        <td><%= link_to 'Mostrar', user %></td>
-        <td><%= link_to 'Editar', edit_user_path(user) %></td>
-        <td><%= link_to 'Excluir', user, method: :delete, data: { confirm: 'Voce deseja realmente excluir o registro?' } %></td>
+        <td><%= link_to 'Mostrar', user, class: "btn btn-outline-primary btn-sm" %></td>
+        <td><%= link_to 'Editar', edit_user_path(user), class: "btn btn-outline-primary btn-sm" %></td>
+        <td><%= link_to 'Excluir', user, class: "btn btn-outline-primary btn-sm", method: :delete, data: { confirm: 'Voce deseja realmente excluir o registro?' } %></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>
+</body>
 
-<br>
-
-<%= link_to 'Novo Cliente', new_user_path %>
