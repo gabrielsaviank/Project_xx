@@ -23,7 +23,7 @@ html {
 
 body{
   background-image: url("http://news.nus.edu.sg/sites/default/files/resources/highlights/2017/2017-10/solar_energy/solar_energy-1.jpg");
-  height: 800px;
+  height: 100%;
 
 }
 
@@ -40,7 +40,7 @@ body{
   padding-bottom: 0px;
   width: 60%;
   margin: auto;
-  height: 500px;
+  height: fit-content;
   font-size: large;
   background-color: whitesmoke;
   opacity: 0.8;
@@ -53,7 +53,7 @@ body{
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 30px;
-  padding-bottom: 0px;
+  padding-bottom: 50px;
   width: 80%;
   margin: auto;
   height: 500px;
@@ -65,4 +65,23 @@ body{
   text-align: center;
 }
 
+.card3{
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 10pxpx;
+  width: 80%;
+  margin: auto;
+  height: fit-content;
+  font-size: large;
+  background-color: whitesmoke;
+  opacity: 0.8;
+  border-radius: 10px;
+  align-items: center;
+  text-align: left;
+}
 
+.index{
+  background-image: url("http://news.nus.edu.sg/sites/default/files/resources/highlights/2017/2017-10/solar_energy/solar_energy-1.jpg");
+  height: 900px;
+}

@@ -1,4 +1,4 @@
-<body>
+<body class="index">
 <div class="navi">
   <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h3 class="my-0 mr-md-auto font-weight-high">X-Solar Tech Clientes</h3>
@@ -10,7 +10,7 @@
   </div>
 </div><br>
 
-<div class="card">
+<div class="card2">
   <h2 style="font-size: xx-large">Esqueceu sua Senha ?</h2><br><br><br><br>
 
   <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
@@ -23,7 +23,7 @@
 
     <div class="form-group">
       <%= f.submit "Enviar instruções de senha", class: 'btn btn-lg btn-outline-primary' %>
-    </div>
+    </div><br>
   <% end %>
 </div>
 </body>

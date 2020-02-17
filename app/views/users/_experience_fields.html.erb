@@ -1,41 +1,41 @@
 <div class="nested-fields">
-  <div class="field">
+  <div class="form-group">
     <%= f.label :ziptwo, 'Cep' %>
     <%= f.text_field :ziptwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :citytwo, 'Cidade' %>
     <%= f.text_field :citytwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :statetwo, 'Estado' %>
     <%= f.text_field :statetwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :boroughtwo, 'Bairro' %>
     <%= f.text_field :boroughtwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :streetwo, 'Rua' %>
     <%= f.text_field :streetwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :numbertwo, 'Numero' %>
     <%= f.text_field :numbertwo %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= f.label :comptwo, 'Complemento' %>
     <%= f.text_field :comptwo %>
   </div>
 
-  <div class="field">
-    <h4>Tipo de Estabelecimento:</h4>
+  <div class="form-group">
+    <h4>Tipo de Estabelecimento:</h4><br>
     <%= label_tag 'tipo_comercial', 'Comercial' %>
     <%= check_box_tag 'user[tipo][]', 'Comercial', checked('Comercial'), id: 'tipo_comercial' %>
 
@@ -49,7 +49,7 @@
     <%= check_box_tag 'user[tipo][]', 'Casa de Praia', checked('Casa de Praia'), id: 'tipo_casa' %>
   </div>
 
-  <%= link_to_remove_association 'Remover Endereço', f %>
+  <%= link_to_remove_association 'Remover Endereço', f, class: "btn btn-outline-info" %>
 
   <br><br><br>
 </div>

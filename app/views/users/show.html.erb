@@ -1,92 +1,101 @@
-<p id="notice"><%= notice %></p>
-<h1>X-Solar Tech</h1>
-<p>
-  <strong>Nome:</strong>
-  <%= @user.name %>
-</p>
+<body>
+  <div class="card3">
+    <h2 style="font-size: xx-large">X-Solar Tech Clientes</h2><br>
+    <p class=" form-group">
+      <strong>Nome:</strong>
+      <%= @user.name %>
+    </p>
 
-<p>
-  <strong>Cpf:</strong>
-  <%= @user.cpd %>
-</p>
+    <p class="form-group">
+      <strong>Cpf:</strong>
+      <%= @user.cpd %>
+    </p>
 
-<p>
-  <strong>Telefone:</strong>
-  <%= @user.phone %>
-</p>
+    <p class="form-group">
+      <strong>Telefone:</strong>
+      <%= @user.phone %>
+    </p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
+    <p class="form-group">
+      <strong>Email:</strong>
+      <%= @user.email %>
+    </p>
 
-<p>
-  <strong>Cep:</strong>
-  <%= @user.zip %>
-</p>
+    <p class="form-group">
+      <strong>Cep:</strong>
+      <%= @user.zip %>
+    </p>
 
-<p>
-  <strong>Cidade:</strong>
-  <%= @user.city %>
-</p>
+    <p class="form-group">
+      <strong>Cidade:</strong>
+      <%= @user.city %>
+    </p>
 
-<p>
-  <strong>Estado:</strong>
-  <%= @user.state %>
-</p>
+    <p class="form-group">
+      <strong>Estado:</strong>
+      <%= @user.state %>
+    </p>
 
-<p>
-  <strong>Bairro:</strong>
-  <%= @user.borough %>
-</p>
+    <p class="form-group">
+      <strong>Bairro:</strong>
+      <%= @user.borough %>
+    </p>
 
-<p>
-  <strong>Rua:</strong>
-  <%= @user.street %>
-</p>
+    <p class="form-group">
+      <strong>Rua:</strong>
+      <%= @user.street %>
+    </p>
 
-<p>
-  <strong>Número:</strong>
-  <%= @user.number %>
-</p>
+    <p class="form-group">
+      <strong>Número:</strong>
+      <%= @user.number %>
+    </p>
 
-<p>
-  <strong>Complemento:</strong>
-  <%= @user.comp %>
-</p>
+    <p class="form-group">
+      <strong>Complemento:</strong>
+      <%= @user.comp %>
+    </p>
 
-<p>
-  <strong>Tipos dos Imóveis:</strong>
-  <%= @user.tipo %>
-</p>
+    <p class="form-group">
+      <strong>Tipos dos Imóveis:</strong>
+      <%= @user.tipo %>
+    </p>
 
-<p>
-  <% @user.experiences.each_with_index do |exp, index| %>
-    <br>
-    <h4>Endereço:</h4>
-    <strong>Cep:</strong>
-    <%= exp.ziptwo %>
-    <br>
-    <strong>Cidade:</strong>
-    <%= exp.citytwo %>
-    <br>
-    <strong>Estado:</strong>
-    <%= exp.statetwo %>
-    <br>
-    <strong>Bairro:</strong>
-    <%=exp.boroughtwo %>
-    <br>
-    <strong>Rua:</strong>
-    <%=exp.streetwo %>
-    <br>
-    <strong>Number:</strong>
-    <%=exp.numbertwo %>
-    <br>
-    <strong>Complemento:</strong>
-    <%= exp.comptwo %>
-    <br>
-  <% end %>
-</p>
+    <p class="form-group">
+      <% @user.experiences.each_with_index do |exp, index| %>
+        <br>
+        <h4 class="form-group">Endereço:</h4>
+        <strong class="form-group">Cep:</strong>
+        <%= exp.ziptwo %>
+        <br>
+        <strong class="form-group">Cidade:</strong>
+        <%= exp.citytwo %>
+        <br>
+        <strong class="form-group">Estado:</strong>
+        <%= exp.statetwo %>
+        <br>
+        <strong class="form-group">Bairro:</strong>
+        <%=exp.boroughtwo %>
+        <br>
+        <strong class="form-group">Rua:</strong>
+        <%=exp.streetwo %>
+        <br>
+        <strong class="form-group">Number:</strong>
+        <%=exp.numbertwo %>
+        <br>
+        <strong class="form-group">Complemento:</strong>
+        <%= exp.comptwo %>
+        <br>
+      <% end %>
+      </p><br>
 
-<%= link_to 'Editar', edit_user_path(@user) %> |
-<%= link_to 'Voltar', users_path %>
+
+      <div class="actions">
+        <%= link_to 'Editar', edit_user_path(@user), class: "btn btn-outline-primary btn-md" %>
+      </div><br>
+
+      <div class="actions">
+        <%= link_to 'Voltar', users_path, class: "btn btn-outline-primary" %>
+      </div><br>
+  </div><br>
+</body>

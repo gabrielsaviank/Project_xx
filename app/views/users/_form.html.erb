@@ -1,101 +1,120 @@
-<%= form_with(model: user, local: true) do |form| %>
-  <% if user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% user.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+<body>
+  <div class="navi">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h3 class="my-0 mr-md-auto font-weight-high">X-Solar Tech Clientes</h3>
+      <nav class="my-2 my-md-0 mr-md-3">
+        <a style="padding-right: 20px" <%=link_to "Home", wilkommen_path, method: :get, class: "btn btn-outline-primary"  %></a>
+        <a style="padding-right: 20px"> <%= link_to 'Menu', users_path, class:"btn btn-outline-primary" %></a>
+        <a style="padding-right: 20px"><%=link_to "Logout", destroy_admin_session_path, method: :delete, class: "btn btn-outline-primary"%></a>
+      </nav>
     </div>
-  <% end %>
+  </div><br>
+<div class="card3">
 
-  <div class="field">
-    <%= form.label :name, 'Nome' %>
-    <%= form.text_field :name, id: :user_name %>
-  </div>
+  <h2 style="font-size: xx-large">Novo Cliente</h2><br>
+  <%= form_with(model: user, local: true) do |form| %>
+    <% if user.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-  <div class="field">
-    <%= form.label :cpd, 'Cpf'%>
-    <%= form.text_field :cpd, id: :user_cpd %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone, 'Telefone' %>
-    <%= form.text_field :phone, id: :user_phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email, 'Email' %>
-    <%= form.text_field :email, id: :user_email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :zip, 'Cep' %>
-    <%= form.text_field :zip, id: :user_zip %>
-  </div>
-
-  <div class="field">
-    <%= form.label :city, 'Cidade' %>
-    <%= form.text_field :city, id: :user_city %>
-  </div>
-
-  <div class="field">
-    <%= form.label :state, 'Estado' %>
-    <%= form.text_field :state, id: :user_state %>
-  </div>
-
-  <div class="field">
-    <%= form.label :borough, 'Bairro' %>
-    <%= form.text_field :borough, id: :user_borough %>
-  </div>
-
-  <div class="field">
-    <%= form.label :street, 'Rua' %>
-    <%= form.text_field :street, id: :user_street %>
-  </div>
-
-  <div class="field">
-    <%= form.label :number, 'Numero' %>
-    <%= form.text_field :number, id: :user_number %>
-  </div>
-
-  <div class="field">
-    <%= form.label :comp, 'Complemento' %>
-    <%= form.text_field :comp, id: :user_comp %>
-  </div>
-
-  <div class="field">
-    <h4>Tipo de Estabelecimento: </h4>
-    <%= label_tag 'tipo_comercial', 'Comercial' %>
-    <%= check_box_tag 'user[tipo][]', 'Comercial', checked('Comercial'), id: 'tipo_comercial' %>
-
-    <%= label_tag 'tipo_residencial', 'Residencial' %>
-    <%= check_box_tag 'user[tipo][]', 'Residencial', checked('Residencial'), id: 'tipo_residencial' %>
-
-    <%= label_tag 'tipo_rural', 'Rural' %>
-    <%= check_box_tag 'user[tipo][]', 'Rural', checked('Rural'), id: 'tipo_rural' %>
-
-    <%= label_tag 'tipo_casa', 'Casa de Praia' %>
-    <%= check_box_tag 'user[tipo][]', 'Casa de Praia', checked('Casa de Praia'), id: 'tipo_casa' %>
-
-  </div>
-
-  <h4>Endereços</h4>
-
-  <div id="experiences">
-    <%= form.fields_for :experiences do |experience| %>
-      <%= render 'experience_fields', f: experience %>
+        <ul>
+          <% user.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      </div>
     <% end %>
 
-    <div class="links">
-      <%= link_to_add_association 'Adicionar Endereço', form, :experiences %>
-      <br><br>
+    <div class="form-group">
+      <%= form.label :name, 'Nome' %>
+      <%= form.text_field :name, id: :user_name, :size=> '20', class: 'form-control' %>
     </div>
-  </div>
 
-  <div class="actions">
-    <%= form.submit 'Criar Cadastro' %>
-  </div>
-<% end %>
+    <div class="form-group">
+      <%= form.label :cpd, 'Cpf'%>
+      <%= form.text_field :cpd, id: :user_cpd, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :phone, 'Telefone' %>
+      <%= form.text_field :phone, id: :user_phone, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :email, 'Email' %>
+      <%= form.text_field :email, id: :user_email, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :zip, 'Cep' %>
+      <%= form.text_field :zip, id: :user_zip, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :city, 'Cidade' %>
+      <%= form.text_field :city, id: :user_city, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :state, 'Estado' %>
+      <%= form.text_field :state, id: :user_state, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :borough, 'Bairro' %>
+      <%= form.text_field :borough, id: :user_borough, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :street, 'Rua' %>
+      <%= form.text_field :street, id: :user_street, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="form-group">
+      <%= form.label :number, 'Numero' %>
+      <%= form.text_field :number, id: :user_number, :size=> '20', class: 'form-control' %>
+    </div>
+
+    <div class="from-group">
+      <%= form.label :comp, 'Complemento' %>
+      <%= form.text_field :comp, id: :user_comp, :size=> '20', class: 'form-control' %>
+    </div><br>
+
+    <div class="form-group">
+      <h4>Tipo de Estabelecimento: </h4><br>
+      <%= label_tag 'tipo_comercial', 'Comercial' %>
+      <%= check_box_tag 'user[tipo][]', 'Comercial', checked('Comercial'), id: 'tipo_comercial' %>
+
+      <%= label_tag 'tipo_residencial', 'Residencial' %>
+      <%= check_box_tag 'user[tipo][]', 'Residencial', checked('Residencial'), id: 'tipo_residencial' %>
+
+      <%= label_tag 'tipo_rural', 'Rural' %>
+      <%= check_box_tag 'user[tipo][]', 'Rural', checked('Rural'), id: 'tipo_rural' %>
+
+      <%= label_tag 'tipo_casa', 'Casa de Praia' %>
+      <%= check_box_tag 'user[tipo][]', 'Casa de Praia', checked('Casa de Praia'), id: 'tipo_casa' %>
+
+    </div><br>
+
+    <h4>Outros Endereços:</h4><br>
+
+    <div id="experiences">
+      <%= form.fields_for :experiences do |experience| %>
+        <%= render 'experience_fields', f: experience %>
+      <% end %>
+
+      <div class="links">
+        <%= link_to_add_association 'Adicionar Endereço', form, :experiences, class: "btn btn-outline-info" %>
+        <br><br>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= form.submit 'Criar Cadastro', class: "btn btn-outline-primary" %>
+    </div><br>
+
+    <a style="padding-right: 20px"> <%= link_to 'Voltar', users_path, class:"btn btn-outline-primary btn-md" %></a><br><br>
+  <% end %>
+</div><br>
+</body>
+
