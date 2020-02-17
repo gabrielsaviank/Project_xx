@@ -28,7 +28,7 @@ _Bulma_
 _Bootstrap_ 
 
 
-#### Other 
+#### README Please
 
 > Beware with the jquery in this version of ruby if not correctly installed will have some issues when generating a newer nested model
 
@@ -36,3 +36,4 @@ _Bootstrap_
 
 > Docker were not used due to conflict with some projects.
 
+> The action mailer is ready! To use you must uncomment the config action mailer session in development.rb and activate the controller, make sure that you added a valid email and check your google permissions. 
