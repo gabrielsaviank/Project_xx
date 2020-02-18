@@ -36,4 +36,8 @@ _Bootstrap_
 
 > Docker were not used due to conflict with some projects.
 
-> The action mailer is ready! To use you must uncomment the config action mailer session in development.rb and activate the controller, make sure that you added a valid email and check your google permissions. 
+> The action mailer is ready! To use you must uncomment the config action mailer session in development.rb and activate the controller, make sure that you added a valid email and check your google permissions.
+
+> The Home layout is merely illustrative.  
+
+The website is running in a Debian VM to access [Click Here](http://179.124.144.24:3000/wilkommen)
