@@ -33,7 +33,6 @@
     <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v9.7.4, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.13, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bindex (v0.8.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bootstrap (v4.0.0.alpha6, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bulma (v0.1.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
@@ -64,6 +63,7 @@
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.7, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="popper_js (v1.16.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.2.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v1.1.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
@@ -79,6 +79,8 @@
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.7.4, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-listen (v4.0.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.7, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc (v2.2.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sassc-rails (v2.1.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring (v2.1.0, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spring-watcher-listen (v2.0.1, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, RVM: ruby-2.4.0 [global]) [gem]" level="application" />
