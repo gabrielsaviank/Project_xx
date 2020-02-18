@@ -40,7 +40,7 @@ _As autorizações foram instaladas, porém o projeto nao informou nada sobre, p
 
 > Docker were not used due to conflict with some projects.
 >
-_Docker não foi utilizado por conta de conflitos com outros projetos que utilizavam a DB_
+_Docker não foi utilizado por conta de conflitos com outros projetos que utilizavam o Postgresql_
 
 > The action mailer is ready! To use you must uncomment the config action mailer session in development.rb and activate the controller, make sure that you added a valid email and check your google permissions.
 >
